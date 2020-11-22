@@ -1,0 +1,9 @@
+/*Strukturerar CV bilden och texten på sidan*/
+#cvPhoto {
+    float: none;
+    display: block;
+    text-align: center;
+}
+#w { padding: 20px 15px; }
+p { padding: 0; }
+

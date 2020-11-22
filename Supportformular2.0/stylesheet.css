@@ -1,0 +1,87 @@
+/*
+    @author: Elias Posluk
+	  Student-id: elipos-5
+    Uppgift: Supportformulär version 2.0
+    @date 08/11/2020
+*/
+
+/*Fixar strukturen på första rubriken, "Supportformulär"*/
+.supportformular_h1
+{
+    color: black;
+    font-family: georgia;
+    font-size: 1.8em;
+}
+
+/*
+Fixar strukturen på texten under huvudrubriken, dvs paragraphen. <p>
+*/
+#p_supportavdelning
+{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+/*
+Fixar radioknappens utseende, yttre gräns samt bredden och höjden 
+*/
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 0 2px gray;
+  }
+  
+  /*
+    fixar radioknappens rundande kanter/cirkel och 
+    färglägger efter knapptryckning.
+  */
+  input[type='radio']:checked {
+    box-shadow: 0 0 0 2px green;
+  }
+  
+  /*
+    fixar knappen innuti knappen, det vill säga den svarta knappen.
+    Storleken, bredden, höjden och placering på knappen justeras här också.
+  */
+  input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+  }
+  
+  /*
+   radioknappens utseende/färg. 
+  */
+  input[type='radio']:checked:before {
+    background: black;
+    
+  }
+
+
+/*
+knapparna button1 och button2 har en active 
+funktion där knappen samverkar med varje knapptryck som användaren gör.
+Detta är för att ge en mer användarvänlig bekräftelse för användaren som 
+trycker på knappen. Trycker man på submit knappen så får man ytterligare en bekräftelse
+att informationen har nog skickats med en grön skugga(om man har fyllt in alla fält och inte triggat required funktionen).
+Samma funktionalitet finns för reset knappen, fast en grå skugga för varje knapptryck.
+*/
+.button1:active
+{   
+    border-radius: 4px;
+    box-shadow: 0 5px green;
+    transform: translateY(4px);
+}
+.button2:active{
+    border-radius: 4px;
+    box-shadow: 0 5px grey;
+    transform: translateY(4px);
+}

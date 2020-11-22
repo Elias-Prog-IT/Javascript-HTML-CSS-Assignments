@@ -1,0 +1,112 @@
+<!--
+    @author: Elias Posluk
+	Student-id: elipos-5
+    Uppgift: Supportformulär version 2.0
+    @date 08/11/2020
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supportformulär</title>
+    <link rel="StyleSheet" type="text/css" href="stylesheet.css" />
+</head>
+
+<body>
+    <!--Huvudrubriken till supportformuläret-->
+<h1 class="supportformular_h1">Supportformulär</h1>
+<div class="div_Form_Container">
+
+    <!--Adressen som skickas vidare med POST när man klickar på submit knappen längre ner -->
+    <form action="http://staff.www.ltu.se/~susfah/VT19/parse_form.php" method="POST">
+
+    <h4 id="p_supportavdelning">Här kan du skicka ett ärende till vår supportavdelning.</h4>
+    
+    <!--
+        Här skriver användaren in hens namn och telefonnummer i supportformuläret.
+        Här tillkommer placeholder för att göra det extra tydligt för användaren, med tanke
+        på användarvänligheten samt required för att vara en säkerhetsårgärd, så att användaren
+        blir notifikerad om man försöker skicka iväg supportformuläret utan kontaktuppgifter till
+        användaren. 
+        Autofokus är också tillagd i första rutan där man skriver i namnet, för att göra det enklare för
+        användaren. Detta visas med att markören blinkar på första rutan.
+    -->
+    <label for="fname">Ditt namn:</label><br>
+    <input type="text" id="fname" name="namn" placeholder="Ditt namn här..." required autofocus>
+    <br><br>
+    <label for="phoneNr">Telefon:</label><br>
+    <input type="tel" id="phoneNr" name="telefon" placeholder="Ditt telefonnummer här..." required>
+    
+    <!--
+        Här skapas prioritetslistan för supportformuläret.
+        Här har värderna "values" fått de obligatoriska värderna 1, 2, 3. 
+        Drop down meny
+    -->
+    <br><br>
+    <label class="priority" for="prioritet">Prioritet:</label><br>
+    <select name="prioritet" id="prioritet">
+        <option value="1">Låg</option>
+        <option value="2">Medel</option>
+        <option value="3">Hög</option>
+    </select>
+
+    <!--Radioknappen skapas här, likt exemplet vi fick. 
+    Här har värderna "values" fått de obligatoriska värderna-->
+    <br><br>
+    <label>Tilldela till ort:</label><br>
+    <input type="radio" id="city_Göteborg" name="ort" value="gbg">
+    <label for="city_Göteborg">Göteborg</label><br>
+    <input type="radio" id="city_Stockholm" name="ort" value="sthlm">
+    <label for="city_Stockholm">Stockholm</label>s<br>
+    <input type="radio" id="city_Umeå" name="ort" value="ume">
+    <label for="city_Umeå">Umeå</label><br>
+    <input type="radio" id="city_Luleå" name="ort" value="lule">
+    <label for="city_Luleå">Luleå</label>
+    
+    <!--
+     Kategori elementet skapas här, likt exemplet som följdes. 
+     Här har värderna "values" fått de obligatoriska värderna. 
+     Drop down meny.     
+    -->
+    <br><br>
+    <label>Kategori:</label><br>
+    <select size="1" name="kategori" >
+        <option  value="fakt">Fakturering</option>
+        <option  value="net">Internet</option>
+        <option  value="tel">Telefoni</option>
+        <option  value="epost">E-post</option>
+    </select>
+
+    <!--
+        Här skapas rubriken för textlådan/beskrivningen under
+        Required funktionen finns med här, tanken är att man måste beskriva kort vad problemet är  
+        så att supportteamet kan se vad formuläret gäller samt innan man kan skicka iväg formuläret som användare.
+    -->
+    <br><br>
+    <label>Rubrik:</label><br>
+    <input type="text" name="rubrik" placeholder="Kort beskrivning här..." required>
+
+    <!--
+        Här skapas beskrivningslådan där man kan skriva mer utförligt. Required funktionen 
+        finns med här, tanken är att man måste beskriva vad problemet är innan man kan skicka 
+        iväg formuläret. 
+    -->
+    <br><br>
+    <label>Beskrivning:</label><br>
+    <textarea rows="4" cols="40" name="beskrivning" placeholder="Ju mer inromation du kan ge oss,
+desto enklare kan vi lösa problemet. Berätta så detaljerat som möjligt!" required></textarea>
+
+    <!--
+        knapparna för att skicka iväg informationen man har skrivit ner på 
+        Supportformuläret(button1/submit), eller (button2/reset) rensar/nollställer allt
+        som det var från början. 
+    -->
+    <br><br>
+    <input class="button1" type="submit" name="skicka" value="Submit"> 
+    <input class="button2" type="reset" value="Reset">
+
+</form>
+</div>
+</body>
+</html>

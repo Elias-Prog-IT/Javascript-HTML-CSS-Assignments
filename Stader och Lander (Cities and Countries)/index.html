@@ -1,0 +1,50 @@
+<!--
+    @author: Elias Posluk
+	  Student-id: poel20ty
+    Uppgift: Städer och Länder
+    @date 30/09/2020
+-->
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Städer och Länder</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="Stader_och_Lander.js"></script>
+  </head>
+<body>
+  <table align="center">
+    <tr>
+      <td valign="top">
+        <div id="countries" style="border: 2px solid"></div>
+      </td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td valign="top">
+        <div id="cities" style="border: 2px solid; display: none"></div>
+      </td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td valign="top">
+        <div id="cityinfo" style="border: 2px solid; display: none"></div>
+      </td>
+    </tr>
+   </table>
+  <div align="center" style="border: 2px solid; padding: 10px">
+    <div id="visited_cities">Antalet besökta städer är: null</div>
+    <div id="total_people_met">Kombinerad befolkning som du har stött på: null</div>
+
+    <script type="text/javascript">
+      //funktionskallelse och platshållare för funktionerna get_cities, get_city_info och visitedcities 
+      get_cities(); 
+      get_city_info();
+      visitedcities(); 
+    </script>
+    </div>
+    <div align="center" style="padding: 20px">
+      <!--knapp och funktionskallelse för att rensa bort historiken på besökta städer--> 
+    <button onclick="delete_history();">Rensa besökta städer!</button>
+  </div>
+</body>
+</html>
