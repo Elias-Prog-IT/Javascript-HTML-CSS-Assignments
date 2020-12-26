@@ -1,0 +1,92 @@
+<!--
+    @author: Elias Posluk
+	Student-id: elipos-5
+    Uppgift: Project, assignment 4
+    @date 14/12/2020
+-->
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beans 'n Cream Café</title>
+        <!--Links to Google Fonts, style sheet and font awsome-->
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Kontakt!</h1>
+            <div class="flex-container">
+            <ul>
+                <li><form class="Swedish" style="display:inline" action="/index.html" method="get">
+                    <button>Swedish</button>
+                </form></li>
+                <li><form class="English" style="display:inline" action="../pagesenglish/indexenglish.html" method="get">
+                    <button>English</button>
+                </form></li>
+            </ul>
+        </div>
+        </header>
+        <nav class="flex-container">
+            <ul>
+                <li><form style="display: inline" action="bilder.html" method="get">
+                    <button>Bilder</button>
+                </form></li>
+                <li><form style="display: inline" action="produktfakta.html" method="get">
+                    <button>Produktfakta</button>
+                </form></li>
+                <li><form style="display: inline" action="menu.html" method="get">
+                    <button>Meny och beställning</button>
+                </form></li>
+                <li><form style="display: inline" action="/index.html" method="get">
+                    <button>Huvudsida</button>
+                </form></li>
+                <li><form style="display: inline" action="jobbahososs.html" method="get">
+                    <button>Jobba Hos Oss</button>
+                </form></li>
+               <li><form style="display: inline" action="oppetider.html" method="get">
+                    <button>Öppettider</button>
+                </form></li>
+            </ul>
+        </nav>
+        <!--Content-->
+        <article>
+            <div id="content">
+                <h2>Kontakta oss!</h2>
+                <p> 
+                    Har du några frågor om oss eller våra produkter nås vi antingen på telefon under våra öppettider eller 
+                    så kan ni nedan kontakta oss genom att fylla i formuläret. Vi försöker att besvara alla frågor senast nästkommande vardag.
+                </p>
+                
+                <form action="/action_page.php" method="post" target="_blank">
+                <label for="fname">Ditt namn:</label><br>
+                <input type="text" id="fname" name="namn" placeholder="Ditt namn här..." required autofocus>
+                <br><br>
+                <label for="phoneNr">Telefon:</label><br>
+                <input type="tel" id="phoneNr" name="telefon" placeholder="Ditt telefonnummer här..." required>
+                <br><br>
+                <label for="email">Din e-post</label><br>
+                <input type="email" id="email" name="email" placeholder="Din e-postadress här..." required>
+                <br><br>
+                <label>Beskrivning:</label><br>
+                <textarea rows="4" cols="40" name="beskrivning" placeholder="Berätta så detaljerat som möjligt!" required></textarea>
+                <br><br>
+                <input class="button1" type="submit" name="skicka" value="Skicka meddelande"> 
+                </form>
+                <ul class="addressContact">
+                    <li>Telefonnummer: (+46) 08-121 261 59</li>
+                    <li>Besökadress: Norrlandsgatan 17</li>
+                    <li>Visa på<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/rDXEBszxJtsoKPGo8"> karta</a></li>
+                </ul>  
+                  
+            </div>
+        </article>
+        <!--Footer-->
+        <footer>
+        <!--Copyright info-->
+        <p id="copy"><span> Beans 'n Cream Café </span><br/>&copy; elipos-5</p>
+        </footer>
+    </body>
+</html>

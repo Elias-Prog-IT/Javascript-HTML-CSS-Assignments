@@ -1,0 +1,366 @@
+/*
+    @author: Elias Posluk
+	Student-id: elipos-5
+    Uppgift: Project, assignment 4
+    @date 14/12/2020
+*/
+
+/* Start without margin and padding, setting colors */
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(78, 84, 84);
+    color: cornsilk;
+    font-family: sans-serif;
+}
+
+/*wrapper and container for the menu, for what the café serves*/
+#wrapper
+{ 
+    height:500px;
+}
+
+.container 
+{ 
+    padding: 5px 100px 100px 5px;
+    width: 240px;
+    position: relative;
+}
+
+.image
+{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float:left;
+    width:110px;
+    height:100px;
+    vertical-align: middle;
+}
+
+.Cappuccino
+{
+    position: absolute;
+    top: 32px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.Espresso
+{
+    position: absolute;
+    bottom: -100px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.matchaTea
+{
+    position: absolute;
+    bottom: -230px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.normalTea
+{
+    position: absolute;
+    bottom: -350px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.container2 
+{ 
+    padding: 400px -400px -500px 550px;
+    width: 250px;
+    position: relative;
+    left: 550px;
+    top: -490px;
+}
+
+.image2
+{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float:left;
+    width:110px;
+    height:100px;
+    vertical-align: middle;
+}
+
+.Donut
+{
+    position: absolute;
+    bottom: -470px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.ButterPeanut
+{
+    position: absolute;
+    bottom: -600px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.CinnamonBun
+{
+    position: absolute;
+    bottom: -725px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.Croissant
+{
+    position: absolute;
+    bottom: -850px;
+    left: 120px;
+    vertical-align: middle;
+    font-family: sans-serif;
+}
+
+/*Settings for all the sematic elements*/
+
+
+header, nav, article, footer 
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: cornsilk solid 1px;
+    border-radius: 10px;
+    background-color: black;
+    padding: 20px;
+}
+
+#content {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+}
+
+header, footer {
+    justify-content: center;
+}
+header {
+    height: 5%; 
+}
+footer {
+    margin-bottom: 20px;
+}
+
+/*Swedish and English buttons on the top right corner*/
+.Swedish
+{
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
+
+.English
+{
+    position: absolute;
+    top: 20px;
+    right: 150px;
+}
+
+.addressContact
+{
+    text-align: center;
+    list-style-type: none;
+}
+
+/*Headings*/
+
+h1{ 
+    margin: auto;   
+    font-family: 'Tangerine', cursive;
+    font-size: 5em;
+    justify-content: center;
+    display: flex; 
+}
+h2 {
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Vivaldi', 'cursive';
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Times New Roman', 'Times', 'sherif';
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.paragraphOpenHours
+{
+    text-align: center;
+}
+/*media rules for h1 size on smaller screens*/
+ @media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 2em;
+    }
+} 
+/*round image, as a block elemant*/
+img {
+    display: block;
+    margin: auto;
+    border: cornsilk solid 2px;
+    border-radius: 50%;
+}
+
+/*Styling tables, dotted border, collapse border */
+table {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    color: cornsilk;
+    font-family: 'Amatic SC';
+    font-size: 1.2em;
+    text-align: center;
+}
+table,td {
+    border:  rgb(44, 46, 46) dotted;
+    border-collapse: collapse;
+}
+/*italic*/
+span {
+    font-style: italic;
+    font-weight: lighter;
+}
+/*icons*/
+i {
+    font-size: 2ex;
+    font-weight: lighter;
+}
+/*smaler text for copyright*/
+#copy {
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+}
+/*almost like a logo*/
+#copy  span {
+    font-family: 'Tangerine', cursive;
+    font-size: x-large;
+}
+/*Flexbox settings, center*/
+.flex-container{
+    display: flex; 
+    justify-content: center;
+}
+/*unordered list, flex, wrap*/
+.flex-container ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*list items, grow, no bulletpoints*/  
+.flex-container ul li {
+    flex-grow: 1;
+    list-style: none;
+} 
+/*buttons*/  
+.flex-container button{
+    margin: 5px;
+    border: cornsilk solid 2px;
+    border-radius: 10%;
+    background-color: rgb(38, 39, 41);
+    color: cornsilk;
+    font-family: 'Amatic SC';
+    font-size: 2em;
+    text-decoration: none;
+}
+/*changes buttons when hoover*/ 
+.flex-container ul li button:hover {
+    background-color: cornsilk;
+    color: black;
+}
+/* link text, color, no underline */
+.flex-container a {
+    color: cornsilk;
+    font-family: 'Amatic SC';
+    /* font-size: 2em; */
+    text-decoration: none;
+}
+/*changes link text when hoover*/
+.flex-container a:hover {
+    background-color: cornsilk;
+    color: black;
+}
+/*Images, rouded corners, flex, wrap*/
+.flex-container img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    border-radius: 25%;
+}
+/*Structure for the picture gallery*/
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

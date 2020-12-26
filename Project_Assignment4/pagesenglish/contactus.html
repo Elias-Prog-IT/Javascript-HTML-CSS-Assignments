@@ -1,0 +1,96 @@
+<!--
+    @author: Elias Posluk
+	Student-id: elipos-5
+    Uppgift: Project, assignment 4
+    @date 14/12/2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beans 'n Cream Café</title>
+        <!--Links to Google Fonts, style sheet and font awsome-->
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Contact</h1>
+            <div class="flex-container">
+            <ul>
+                <li><form class="Swedish" style="display:inline" action="/index.html" method="get">
+                    <button>Swedish</button>
+                </form></li>
+                <li><form class="English" style="display:inline" action="/pagesenglish/indexenglish.html" method="get">
+                    <button>English</button>
+                </form></li>
+            </ul>
+        </div>
+        </header>
+        <nav class="flex-container">
+            <ul>
+                <li><form style="display: inline" action="../pagesenglish/pictures.html" method="get">
+                    <button>Pictures</button>
+                </form></li>
+                <li><form style="display: inline" action="../pagesenglish/productfacts.html" method="get">
+                    <button>Product Information</button>
+                </form></li>
+                <li><form style="display: inline" action="../pagesenglish/menuenglish.html" method="get">
+                    <button>Menu and Order</button>
+                </form></li>
+                <li><form style="display: inline" action="/pagesenglish/indexenglish.html" method="get">
+                    <button>Main Page</button>
+                </form></li>
+                <li><form style="display: inline" action="../pagesenglish/contactus.html" method="get">
+                    <button>Contact Us</button>
+                </form></li>
+                <li><form style="display: inline" action="../pagesenglish/workwithus.html" method="get">
+                    <button>Work with Us</button>
+                </form></li>
+                <li><form style="display: inline" action="../pagesenglish/openinghours.html" method="get">
+                    <button>Opening Hours</button>
+                </form></li>
+            </ul>
+        </nav>
+        <!--Content-->
+        <article>
+            <div id="content">
+                <h2>Contact Us!</h2>
+                <p> 
+                    If you have any questions about us or our products, 
+                    we can be reached either by phone during our opening hours or you can contact us below by filling out the form. 
+                    We try to answer all questions no later than the next weekday.
+                </p>
+                <form action="/action_page.php" method="post" target="_blank">
+                <label for="fname">Your name:</label><br>
+                <input type="text" id="fname" name="namn" placeholder="Your name here..." required autofocus>
+                <br><br>
+                <label for="phoneNr">Telephone:</label><br>
+                <input type="tel" id="phoneNr" name="telefon" placeholder="Your phoneNr here..." required>
+                <br><br>
+                <label for="email">Your e-mail address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your e-mail address here..." required>
+                <br><br>
+                <label>Description:</label><br>
+                <textarea rows="4" cols="40" name="beskrivning" placeholder="Tell us in as much detail as possible!" required></textarea>
+                <br><br>
+                <input class="button1" type="submit" name="skicka" value="Submit"> 
+            </form>
+                <ul class="addressContact">
+                    <li>Phone number: (+46) 08-121 261 59</li>
+                    <li>Visiting address: Norrlandsgatan 17</li>
+                    <li>Show on the<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/rDXEBszxJtsoKPGo8">map</a></li>
+                </ul>  
+        
+            </div>
+        </article>
+        <!--Footer-->
+        <footer>
+        <!--Copyright info-->
+        <p id="copy"><span> Beans 'n Cream Café </span><br/>&copy; elipos-5</p>
+        </footer>
+    </body>
+</html>
