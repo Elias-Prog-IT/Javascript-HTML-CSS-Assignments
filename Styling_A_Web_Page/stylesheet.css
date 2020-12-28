@@ -1,0 +1,192 @@
+/*
+    @author: Elias Posluk 
+    ltu-id: elipos-5
+    Uppgift: 3a
+    @date 06/11/2020
+*/
+
+/* Ändrar bakgrundsfärgen till svart*/
+body {
+  background-color:black;
+}
+
+/* Ger första rubriken h1 färgen och storleken med font-size 2em
+ och typsnittet Hevetica */
+.facts_h1 {
+  color: lightskyblue;
+  font-size: 2em;
+  font-family: Helvetica;
+}
+
+/* Ger typsnittet sans-serif och textfärgen
+ Detta är en kort presentation för luleå, samma gäller #ltuInformation */
+#shortPresentation {
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+#ltuInformation {
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+/* kallar på klassen omsattning_h2 som finns på html filen 
+här strukturerars rubrik 2 med textfärg, textstorlek och typsnitt*/
+.omsattning_h2 {
+  color: lightskyblue;
+  font-size: 1.5em;
+  font-family: Helvetica;
+}
+
+/*Kallar på klass lista, här struktureras textfärgen
+och typsnitt. Här tar jag också bort den orginala 
+punktformen som hänger med <ul> och <li> och fixar en egen punktlista 
+längre ner, under namnet "ul li::before{}"*/
+.lista {
+  list-style: none;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+/*kallar på id tabell_1 för att fixa textfärgen,
+textstorleken och typsnitt*/
+#tabell_1 {
+  color: lightskyblue;
+  font-size: 18px;
+  font-weight: bolder;
+  font-family: Helvetica;
+}
+/*kallar på klass tabell1 för att fixa ramen eller kantlinjen
+till tabellen samt färgen och marginalen på texten från ramen, med padding */
+.tabell1 {
+  border: 1px solid black;
+  border-color: hotpink;
+  background-color: #ffcccc;
+  padding: 10px 15px 10px 15px;
+}
+
+/*klassen varStyrka_h2 fixar textfärgen, storleken 
+och typsnitt på rubrik2/h2
+ */
+.varStyrka_h2 {
+  color: lightskyblue;
+  font-size: 1.5em;
+  font-family: Helvetica;
+}
+
+/*klassen lista2, här struktureras textfärgen
+och typsnitt. Här tar jag också bort den orginala 
+punktformen som hänger med <ul> och <li> och fixar en egen punktlista 
+längre ner, under namnet "ul li::before{}"*/
+.lista2 {
+  list-style: none;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+/*
+klassen exempel_h3, fixar textfärgen, storleken 
+och typsnitt på rubrik3/h3
+*/
+.exempel_h3 {
+  color: lightskyblue;
+  font-size: 1.17em;
+  font-family: Helvetica;
+}
+
+/*
+här struktureras textfärgen
+och typsnitt. Här tar jag också bort den orginala 
+punktformen som hänger med <ul> och <li> och fixar en egen punktlista 
+längre ner, under namnet "ul li::before{}"
+*/
+.lista3 {
+  list-style: none;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+/*
+id Tabell_2, fixar textfärgen, textstorleken och typsnitt. 
+*/
+#Tabell_2 {
+  color: lightskyblue;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Helvetica;
+}
+
+/*
+id studenter, fixar positioneringen för 
+underrubriken Studenter i tabell 2 samt ger den understrykning 
+*/
+#studenter {
+  position: absolute;
+  text-decoration: underline;
+}
+
+/*
+id fixar positioneringen för 
+underrubriken 17 000 i tabell 2 samt ger den understrykning 
+*/
+#total_sum_students {
+  position: relative;
+  text-align: left;
+  text-decoration: underline;
+}
+
+/*
+kallar på klass tabell2 för att fixa ramen/kantlinjen
+till tabellen samt färgen och marginalen på texten från ramen, med padding
+*/
+.tabell2 {
+  border: 1px solid black;
+  border-color: green;
+  background-color: #ffcc99;
+  padding: 10px 15px 10px 15px;
+}
+
+/*
+    fixar typsnittet på texten i tabell 2
+*/
+.tabell_2_Text {
+  font-family: Candara;
+}
+
+/*
+ Här skapar jag en egen punktlista som hänger med listorna, 
+ gäller klass; lista, lista2 och lista3
+*/
+ul li::before {
+  content: "\2022";
+  color: orangered;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/*
+klassen foot, här skapas en överstryknings/highlight över sista texten på
+tabell 2. Ändrar textfärgen och storleken på texten. 
+*/
+.foot {
+  background-color: black;
+  color: whitesmoke;
+  font-family: Candara;
+  font-size: 14px;
+}
+
+/*
+ id source får en textfärg grön
+*/
+#source {
+  color: #009900;
+}
+
+/*
+Länken till ltu.se får en ändrad färg när musen är över länken. 
+*/
+a:hover {
+  color: hotpink;
+}

@@ -1,0 +1,153 @@
+<!-- 
+	  @author: Elias Posluk
+	  ltu-id: elipos-5
+    Uppgift: 3a
+    @date 06/11/2020
+-->
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAKTA OM LULEÅ TEKNISKA UNIVERSITET</title>
+    <!--Länken till css sidan, stylesheet.css-->
+    <link rel="StyleSheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <!--Sätter h1 i en klass som kallas för "facts_h1", som jag kan nå i css filen, 
+			där jag kan fixa strukturen. Samma gäller id "shortPresentation" och id ltuInformation-->
+    <h1 class="facts_h1">FAKTA OM LULEÅ TEKNISKA UNIVERSITET</h1>
+    <p id="shortPresentation">
+      Detta är en kort presentation om Luleå Tekniska Universitet i siffror.
+    </p>
+    <p id="ltuInformation">
+      Luleå tekniska universitet omsätter 1,5 miljarder kronor per år. Vi är
+      idag 1 600 anställda och 17 000 studenter. Vår forskning bedrivs i nära
+      samarbete med företag som Shell, Ericsson, Scania, LKAB, Airbus, Volvo
+      Aero och IBM samt med ledande internationella universitet. Vår forskning
+      omsätter mer än 800 miljoner kronor.
+    </p>
+    <!--Sätter h2 i en klass som kallas för "omsattning_h2", som jag kan nå i css filen,
+		där jag kan fixa strukturen-->
+    <h2 class="omsattning_h2">Omsättning 1,5 miljarder kronor</h2>
+    <ul class="lista">
+      <li>70 forskningsämnen omsätter</li>
+      <li>800 miljoner kronor varav</li>
+      <li>61% är externfinansierad.</li>
+    </ul>
+    <table class="tabell1">
+      <!--id "tabell_1" hamnar också i css filen där jag kan fixa stukturen och utseendet-->
+      <caption id="tabell_1">
+        Tabell 1
+      </caption>
+      <tbody>
+        <tr>
+          <td>Studenter</td>
+          <td>17 000</td>
+        </tr>
+        <tr>
+          <td>Anställda</td>
+          <td>1 600</td>
+        </tr>
+        <tr>
+          <td>Professorer</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>Forskare och lärare</td>
+          <td>860</td>
+        </tr>
+        <tr>
+          <td>Övrig personal</td>
+          <td>550</td>
+        </tr>
+        <tr>
+          <td>Doktorander</td>
+          <td>600</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Sätter h2 och ul i varsin klass som kallas för "varStyrka_h2" och "lista2", 
+			som jag kan nå i css filen, där jag kan fixa strukturen-->
+    <h2 class="varStyrka_h2">Vår styrka</h2>
+    <ul class="lista2">
+      <li>Spetsforskning</li>
+      <li>Flervetenskaplighet</li>
+      <li>Nära samarbete med näringsliv och samhälle</li>
+    </ul>
+    <!--Sätter h3 och ul i varsin klass som kallas för "exempel_h3" och "lista3", 
+			som jag kan nå i css filen, där jag kan fixa strukturen-->
+    <h3 class="exempel_h3">Exempel på ledande forskning</h3>
+    <ul class="lista3">
+      <li>Gruvteknik och metallurgi</li>
+      <li>Energiteknik och förnyelsebar energi</li>
+      <li>Högpresterande stål</li>
+      <li>IKT</li>
+      <li>Tribologi</li>
+    </ul>
+    <!--id "Tabell_2" kallas i css filen där strukturen åtgärdas, samma sak för 
+		id "studenter" och "total_sum_students" -->
+    <table class="tabell2">
+      <caption id="Tabell_2">
+        Tabell 2
+      </caption>
+      <thead>
+        <tr>
+          <th id="studenter">Studenter</th>
+          <th id="total_sum_students">17 000</th>
+        </tr>
+      </thead>
+      <!--tbody har fått en klass som kallas för "tabell_2_text" där strukturen-->
+      <tbody class="tabell_2_Text">
+        <!--på texten kan ändras i css filen-->
+        <tr>
+          <td>Civilingenjör<br /></td>
+          <td>2800<br /></td>
+        </tr>
+        <tr>
+          <td>Högskoleingenjör<br /></td>
+          <td>350<br /></td>
+        </tr>
+        <tr>
+          <td>Övrig teknisk utbildning<br /></td>
+          <td>800<br /></td>
+        </tr>
+        <tr>
+          <td>Ekonomi och samhällsvetenskap<br /></td>
+          <td>1800<br /></td>
+        </tr>
+        <tr>
+          <td>Hälsovetenskap<br /></td>
+          <td>1300<br /></td>
+        </tr>
+        <tr>
+          <td>Lärarutbildningar<br /></td>
+          <td>900<br /></td>
+        </tr>
+        <tr>
+          <td>Musik, media och teater<br /></td>
+          <td>600<br /></td>
+        </tr>
+        <tr>
+          <td>Fristående kurser<br /></td>
+          <td>8300<br /></td>
+        </tr>
+        <tr>
+          <td>Avancerad nivå<br /></td>
+          <td>600<br /></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr class="foot">
+          <td colspan="2">
+            Cirka 600 utländska studenter ingår i det totala antalet studenter
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <p id="source">
+      Källa: Luleå Tekniska Universitet
+      <a href="http://www.ltu.se/">http://www.ltu.se/</a>
+    </p>
+  </body>
+</html>
